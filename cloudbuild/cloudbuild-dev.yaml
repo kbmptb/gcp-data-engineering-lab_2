@@ -1,10 +1,9 @@
-options:
-  logging: CLOUD_LOGGING_ONLY
-
 steps:
 
 - name: hashicorp/terraform:latest
+
   entrypoint: sh
+
   args:
     - -c
     - |
@@ -14,4 +13,6 @@ steps:
 
       terraform validate
 
-      terraform plan -var-file=dev.tfvars
+      terraform apply \
+      -auto-approve \
+      -var-file=dev.tfvars
