@@ -1,9 +1,7 @@
 steps:
 
 - name: hashicorp/terraform:latest
-
   entrypoint: sh
-
   args:
     - -c
     - |
@@ -13,4 +11,4 @@ steps:
 
       terraform validate
 
-      terraform plan
+      terraform plan -var-file=dev.tfvars
