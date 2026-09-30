@@ -1,0 +1,16 @@
+steps:
+
+- name: hashicorp/terraform:latest
+
+  entrypoint: sh
+
+  args:
+    - -c
+    - |
+      cd Terraform
+
+      terraform init
+
+      terraform validate
+
+      terraform plan
