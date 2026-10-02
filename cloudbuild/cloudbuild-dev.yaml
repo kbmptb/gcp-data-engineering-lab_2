@@ -38,5 +38,5 @@ steps:
       echo "Déploiement du script Dataflow..."
 
       gsutil cp \
-      dataflow/client_stream_demo.py \
+      dataflow/clientStreamDemo2.py \
       gs://bucket280926-demo-dev/dataflow/
