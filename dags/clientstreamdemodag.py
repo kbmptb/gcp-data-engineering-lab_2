@@ -17,7 +17,7 @@ with DAG(
 
     run_dataflow = BeamRunPythonPipelineOperator(
         task_id="run_dataflow_pipeline",
-        py_file="gs://europe-west1-composer-demo-db397fdb-bucket/dataflow/clientStreamDemo2.py",
+        py_file="gs://bucket280926-demo-dev/dataflow/clientStreamDemo2.py",
         runner="DataflowRunner",
         pipeline_options={
             "project": PROJECT_ID,
