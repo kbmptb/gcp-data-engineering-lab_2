@@ -17,3 +17,14 @@ steps:
       terraform validate
 
       terraform plan -var-file=dev.tfvars
+
+- name: gcr.io/google.com/cloudsdktool/cloud-sdk
+  entrypoint: bash
+  args:
+    - -c
+    - |
+      echo "Déploiement du DAG dans Cloud Composer..."
+
+      gsutil cp \
+      dags/client_stream_demo_dag.py \
+      gs://europe-west1-composer-demo-ee40f67f-bucket/dags/
