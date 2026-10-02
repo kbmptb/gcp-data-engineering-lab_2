@@ -10,8 +10,10 @@ steps:
     - |
       cd Terraform
 
-      terraform init
+      terraform init \
+        -backend-config="bucket=bucket280926-tfstate" \
+        -backend-config="prefix=dev"
 
       terraform validate
 
-      terraform apply -auto-approve -var-file=dev.tfvars     
+      terraform plan -var-file=dev.tfvars
