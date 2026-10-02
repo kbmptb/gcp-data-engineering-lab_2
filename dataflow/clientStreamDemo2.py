@@ -56,8 +56,8 @@ def run():
             )
             | "Format BigQuery Row" >> beam.ParDo(FormatForBigQuery())
             | "Write To BigQuery" >> beam.io.WriteToBigQuery(
-                table="client_stream_demo_2",
-                dataset="Dataflow",
+                table="client_stream_demo",
+                dataset="dataflow_demo_dev",
                 project="project-a0c99e7b-8c47-4075-b97",
                 schema={
                     "fields": [
