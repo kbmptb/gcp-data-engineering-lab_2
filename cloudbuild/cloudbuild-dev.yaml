@@ -30,7 +30,7 @@ steps:
       gs://europe-west1-composer-demo-65922e78-bucket/dags/
       
       gsutil cp \
-      dags/customer_orders.py.py \
+      dags/customer_orders.py \
       gs://europe-west1-composer-demo-65922e78-bucket/dags/
       
       
