@@ -23,11 +23,15 @@ steps:
   args:
     - -c
     - |
-      echo "Déploiement du DAG dans Cloud Composer..."
+      echo "Déploiement des DAG dans Cloud Composer..."
 
       gsutil cp \
       dags/clientstreamdemodag.py \
-      gs://europe-west1-composer-demo-ee40f67f-bucket/dags/
+      gs://europe-west1-composer-demo-65922e78-bucket/dags/
+      
+      gsutil cp \
+      dags/customer_orders.py.py \
+      gs://europe-west1-composer-demo-65922e78-bucket/dags/
       
       
 - name: gcr.io/google.com/cloudsdktool/cloud-sdk
