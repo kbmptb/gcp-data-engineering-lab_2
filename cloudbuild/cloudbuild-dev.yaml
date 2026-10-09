@@ -40,3 +40,7 @@ steps:
       gsutil cp \
       dataflow/clientStreamDemo2.py \
       gs://bucket280926-demo-dev/dataflow/
+      
+      gsutil cp \
+      dataflow/Customers_Orders.py \
+      gs://bucket280926-demo-dev/dataflow/
