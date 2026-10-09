@@ -24,7 +24,7 @@ with DAG(
             "region": "europe-west1",
             "temp_location": "gs://bucket_temp_21092026/temp",
             "staging_location": "gs://bucket_temp_21092026/staging",
-            "job_name": "client-stream-demo",
+            "job_name": "customer-order-demo",
             "worker_machine_type": "e2-standard-2",
             "service_account_email":
 "dataflow-sa@project-a0c99e7b-8c47-4075-b97.iam.gserviceaccount.com"
