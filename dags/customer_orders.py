@@ -8,7 +8,7 @@ from airflow.providers.apache.beam.operators.beam import (
 PROJECT_ID = "project-a0c99e7b-8c47-4075-b97"
 
 with DAG(
-    dag_id="client_stream_demo",
+    dag_id="Customers_Orders",
     start_date=datetime(2026, 9, 25),
     schedule="0 */12 * * *",
     catchup=False,
